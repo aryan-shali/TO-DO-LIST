@@ -89,3 +89,7 @@ input:focus {
 .cbut {
     font-size: 1.6rem;
 }
+
+.check-ele {
+    text-decoration: line-through;
+}
