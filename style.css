@@ -76,7 +76,7 @@ input:focus {
     align-items: center;
     justify-content: space-between;
     border-radius: 50px;
-    padding: 0 0 0 20px;
+    padding: 0 20px;
     transition: .5s;
 }
 
@@ -84,4 +84,8 @@ input:focus {
     background: #ccc;
     cursor: pointer;
     transition: .5s;
+}
+
+.cbut {
+    font-size: 1.6rem;
 }
