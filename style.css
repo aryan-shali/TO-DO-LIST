@@ -92,4 +92,5 @@ input:focus {
 
 .check-ele {
     text-decoration: line-through;
+    background-color: rgb(97, 97, 97);
 }

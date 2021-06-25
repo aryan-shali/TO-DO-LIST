@@ -23,6 +23,7 @@ list.addEventListener('click', function(ev) {
 function addb() {
     var inp = document.getElementById('input').value;
 
+
     var newitem = document.createElement('li');
     var newtxt = document.createTextNode(inp)
     newitem.appendChild(newtxt);
@@ -30,19 +31,21 @@ function addb() {
         alert("write something")
     } else {
         document.getElementById('uu').appendChild(newitem);
+
     }
-    document.getElementById('input').value = " ";
+    document.getElementById('input').value = "";
+
     newitem.id = "ll";
     var span = document.createElement("SPAN");
     var text = document.createTextNode("\u00D7");
     span.className = "cbut";
     span.appendChild(text);
-    list.appendChild(span);
+    newitem.appendChild(span);
 
-    for (i = 0; i < close.length; i++) {
-        close[i].onclick = function() {
-            var div = this.parentElement;
-            div.style.display = "none";
+    for (var i = 0; i < cbut.length; i++) {
+        cbut[i].onclick = function() {
+            var div1 = this.parentElement;
+            div1.remove();
 
         }
     }
